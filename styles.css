@@ -1,6 +1,15 @@
+@font-face {
+  font-family: 'piranyaregular';
+  src: url('piranyaregular-ea2r4-webfont.woff2') format('woff2'),
+  url('piranyaregular-ea2r4-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 .image-cropper {
-    width: 400px;
-    height: 400px;
+    width: auto;
+    height: auto;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -16,3 +25,19 @@
     height: 100%;
     width: auto;
   }
+
+.first-text{
+  text-align:center;
+  font-size: 100px;
+  font-family: "piranyaregular";
+  /* display: flex;   
+  justify-content: center; */
+}
+
+#curvedText{
+  /* margin-left:auto; 
+  margin-right:auto; 
+  display:block; */
+  margin-left:650px;
+}
+  
