@@ -20,7 +20,7 @@
   }
   
   img {
-    display: inline;
+    /* display: inline; */
     margin: 0 auto;
     height: 100%;
     width: auto;
@@ -28,8 +28,9 @@
 
 .first-text{
   text-align:center;
-  font-size: 100px;
+  font-size: 85px;
   font-family: "piranyaregular";
+  /* margin-top:100px; */
   /* display: flex;   
   justify-content: center; */
 }
@@ -41,3 +42,51 @@
   margin-left:650px;
 }
   
+path{
+  fill:transparent;
+}
+
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:space-evenly;
+  align-items:center;
+  align-content:space-between;
+}
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  width:900px;
+  /* Then we define the flow direction 
+    and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: row wrap;
+  
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-around;
+  
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.test{
+  margin-top:-200px;
+}
