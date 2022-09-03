@@ -20,8 +20,7 @@
   }
   
   img {
-    /* display: inline; */
-    margin: 0 auto;
+    /* margin: 0 auto; */
     height: 100%;
     width: auto;
   }
@@ -30,16 +29,6 @@
   text-align:center;
   font-size: 85px;
   font-family: "piranyaregular";
-  /* margin-top:100px; */
-  /* display: flex;   
-  justify-content: center; */
-}
-
-#curvedText{
-  /* margin-left:auto; 
-  margin-right:auto; 
-  display:block; */
-  margin-left:650px;
 }
   
 path{
@@ -55,20 +44,10 @@ path{
 }
 
 .flex-container {
-  /* We first create a flex layout context */
   display: flex;
   width:900px;
-  /* Then we define the flow direction 
-    and if we allow the items to wrap 
-   * Remember this is the same as:
-   * flex-direction: row;
-   * flex-wrap: wrap;
-   */
   flex-flow: row wrap;
-  
-  /* Then we define how is distributed the remaining space */
   justify-content: space-around;
-  
   padding: 0;
   margin: 0;
   list-style: none;
@@ -87,6 +66,3 @@ path{
   text-align: center;
 }
 
-.test{
-  margin-top:-200px;
-}
