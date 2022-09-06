@@ -36,11 +36,7 @@ path{
 }
 
 .container{
-  display:flex;
-  flex-wrap:wrap;
-  justify-content:space-evenly;
-  align-items:center;
-  align-content:space-between;
+  display:grid;
 }
 
 .flex-container {
@@ -64,4 +60,5 @@ path{
   font-weight: bold;
   font-size: 3em;
   text-align: center;
+  overflow:auto;
 }

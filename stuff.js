@@ -1,3 +1,3 @@
-var CircleType = require('circletype');
+import CircleType from `circletype`;
 const circleType = new CircleType(document.getElementById('curvedtext'));
-        circleType.radius(200)
+circleType.radius(200)
