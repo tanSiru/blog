@@ -4,18 +4,49 @@
         <link rel="stylesheet" href="styles.css">
         <link rel="stylesheet" href="note-planner/stylesheet.css">
         <link rel="stylesheet" href="mangabey/stylesheet.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     </head>
     <script  src="stuff.js"></script>
-    <script type="module">
-        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.esm.browser.min.js'
-    </script>
-    <div>
-        <picture >
-            <source srcset="./images/p3p.jpg" media="(max-width: 400px)">
-            <source srcset="./images/p3p.jpg">
-            <img src="./images/p3p.jpg" alt="persona 3" class="image-cropper">
-        </picture>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+                <picture >
+                    <source srcset="./images/p3p.jpg" media="(max-width: 400px )">
+                    <source srcset="./images/p3p.jpg">
+                    <img src="./images/p3p.jpg" alt="persona 3" class="image-cropper">
+                </picture> 
+            </div>
+            <div class="swiper-slide">
+                <picture >
+                    <source srcset="./images/hatsuneMiku.jpg" media="(max-width: 400px)">
+                    <source srcset="./images/hatsuneMiku.jpg">
+                    <img src="./images/hatsuneMiku.jpg" alt="hatsuneMiku" class="image-cropper">
+                </picture> 
+            </div>
+            <div class="swiper-slide">
+                <picture >
+                    <source srcset="./images/monogatari.jpg" media="(max-width: 400px)">
+                    <source srcset="./images/monogatari.jpg">
+                    <img src="./images/monogatari.jpg" alt="monogatari" class="image-cropper">
+                </picture> 
+            </div>
+        </div>
     </div>
+    <script>
+        const swiper = new Swiper('.swiper', {loop: true,
+    navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+                },
+    pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+    scrollbar: {el: '.swiper-scrollbar',},
+    autoplay: { delay: 3000,},});
+    </script>
     <div class="stuff">
         <div class="first-text">
             <svg viewBox="0 50 500 300">
