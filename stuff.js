@@ -1,3 +1,3 @@
-import CircleType from `circletype`;
-const circleType = new CircleType(document.getElementById('curvedtext'));
-circleType.radius(200)
+// import CircleType from `circletype`;
+// const circleType = new CircleType(document.getElementById('curvedtext'));
+// circleType.radius(200)
