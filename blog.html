@@ -6,11 +6,17 @@
         <link rel="stylesheet" href="mangabey/stylesheet.css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     </head>
+
+
+
     <script  src="stuff.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+
+
     <div class="swiper">
         <div class="swiper-wrapper">
-
             <div class="swiper-slide">
                 <picture >
                     <source srcset="./images/p3p.jpg" media="(max-width: 400px )">
@@ -33,7 +39,13 @@
                 </picture> 
             </div>
         </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
     </div>
+
+
+
+    
     <script>
         const swiper = new Swiper('.swiper', {loop: true,
     navigation: {
@@ -48,6 +60,13 @@
     // autoplay: { delay: 3000,},
         });
     </script>
+
+
+
+
+
+
+
     <div class="stuff">
         <div class="first-text">
             <svg viewBox="0 50 500 300">
@@ -136,35 +155,94 @@
                 </div>
             </div>
         </div>    
+        
+
+
+
+
+
         <div id="schoolModal" class="modal">
             <div class="modal-content">
-            <span id="schoolSpan" class="close">&times;</span>
-            <p>school</p>
+                <span id="schoolSpan" class="close">&times;</span>
+                <div class="listsSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./images/school/ASK.jpg" alt="ASK" > 
+                        </div>
+
+                        <div class="swiper-slide">
+                            <img src="./images/school/WHCI.jpg" alt="WHCI" >                             
+                        </div>
+                    </div>
+                        <!-- <div class="swiper-pagination"></div> -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
             </div>
         </div>
+
+        <script>
+            const listsSwiper = new Swiper('.listsSwiper', {loop: true,
+        navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                    },
+        pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                },
+        scrollbar: {el: '.swiper-scrollbar',},
+        // autoplay: { delay: 3000,},
+            });
+        </script>
+
+
+
+
         <div id="countryModal" class="modal">
             <div class="modal-content">
             <span id="countrySpan" class="close">&times;</span>
             <p>country</p>
             </div>
         </div>
+
+
+
+
         <div id="hobbyModal" class="modal">
             <div class="modal-content">
             <span id="hobbySpan" class="close">&times;</span>
             <p>hobby</p>
             </div>
         </div>
+
+
+
+
+
         <div id="animangaModal" class="modal">
             <div class="modal-content">
             <span id="animangaSpan" class="close">&times;</span>
             <p>animanga</p>
             </div>
         </div>
+
+
+
+
+
+
         <div id="musicModal" class="modal">
             <div class="modal-content">
             <span id="musicSpan" class="close">&times;</span>
             <p>music</p>
             </div>
         </div>
+
+
+
+
+
     </div>
 </html>

@@ -9,29 +9,29 @@ function stuff(){
     var animangaModal = document.getElementById("animangaModal");
     var musicModal = document.getElementById("musicModal");
 
-    var schoolSpan = document.getElementById("schoolSpan")[0];
+    var schoolSpan = document.getElementById("schoolSpan");
     schoolSpan.onclick = function() {
-        modal.style.display = "none";
+        schoolModal.style.display = "none";
     }
 
-    var countrySpan = document.getElementById("countrySpan")[0];
+    var countrySpan = document.getElementById("countrySpan");
     countrySpan.onclick = function() {
-        modal.style.display = "none";
+        countryModal.style.display = "none";
     }
 
-    var hobbySpan = document.getElementById("hobbySpan")[0];
+    var hobbySpan = document.getElementById("hobbySpan");
     hobbySpan.onclick = function() {
-        modal.style.display = "none";
+        hobbyModal.style.display = "none";
     }
 
-    var animangaSpan = document.getElementById("animangaSpan")[0];
+    var animangaSpan = document.getElementById("animangaSpan");
     animangaSpan.onclick = function() {
-        modal.style.display = "none";
+        animangaModal.style.display = "none";
     }
 
-    var musicSpan = document.getElementById("musicSpan")[0];
+    var musicSpan = document.getElementById("musicSpan");
     musicSpan.onclick = function() {
-        modal.style.display = "none";
+        musicModal.style.display = "none";
     }
 
 
